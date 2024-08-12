@@ -1,5 +1,6 @@
 .App {
-  background-color: #282c34;
+  background-color: #dce1ea;
+  height: 100%;
 }
 
 .header {
@@ -8,14 +9,30 @@
   justify-content: space-between;
   align-items: center;
   
-  margin: 5px; 
+  padding: 0.5rem; 
   background: #282c34;
 }
 
-.header h1 {
+.page { 
+  display: flex;
+  justify-content: center;
+}
+
+.info { 
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  width: 50%;
+  background-color: white;
+  padding: 1%;
+}
+
+.header p {
   margin: 0;
   padding: 0;
   color: white;
+  padding-left: 1rem;
+  font-size: 1.5rem;
 }
 
 .header ul {
@@ -31,17 +48,29 @@
 .header a {
   text-decoration: none;
   display: block;
-  padding: 1em;
+  padding: 1rem;
   color: white;
+  font-size: 1rem;
 }
 
 .header a:hover {
   background: #17191c;
 }
 
+.page {
+  height: 100%;
+}
+
+.subheading p {
+  margin: 0;
+}
+
 @media all and (max-width: 800px) {
   .header {
     justify-content: space-around;
+  }
+  .page { 
+    max-width: 90%;
   }
 }
 
@@ -53,11 +82,30 @@
   .header a { 
     text-align: center; 
     padding: 10px;
-    border-top: 1px solid rgba(255, 255, 255,0.3); 
-    border-bottom: 1px solid rgba(0, 0, 0, 0.1); 
   }
-  .header li:last-of-type a {
-    border-bottom: none;
+  .page { 
+    max-width: 100%;
+  }
+}
+
+@media (min-width: 0px) {
+  p { font-size: 0.5rem; }
+  .subheading p {
+    font-size: 1rem;
+  }
+}
+
+@media (min-width: 400px) {
+  p { font-size: calc(1rem + 1vw); }
+  .subheading p {
+    font-size: calc(1rem + 1.5vw);
+  }
+}
+
+@media (min-width: 1001px){
+  p { font-size: 1.5rem; }
+  .subheading p {
+    font-size: 2rem;
   }
 }
 
@@ -69,14 +117,6 @@ li {
   display: inline;
 }
 
-h1 {
-  color: white;
-}
-
-h2 {
-  color: white;
-}
-
 p {
-  color: white;
+  color: #14161b;
 }
