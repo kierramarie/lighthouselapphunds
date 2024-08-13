@@ -7,9 +7,13 @@ import {
   RouterProvider,
 } from "react-router-dom";
 import TheFinnishLapphund from './pages/theFinnishLapphund';
-import About from './pages/about';
 import Home from './pages/home';
 import News from './pages/news';
+import Males from './pages/males';
+import Females from './pages/females';
+import Now from './pages/now';
+import Later from './pages/later';
+import Gallery from './pages/gallery';
 
 const router = createBrowserRouter([
   {
@@ -21,12 +25,28 @@ const router = createBrowserRouter([
         element: <Home />,
       },
       {
-        path: "/about",
-        element: <About />,
-      },
-      {
         path: "/theFinnishLapphund",
         element: <TheFinnishLapphund />,
+      },
+      {
+        path: "/males",
+        element: <Males />,
+      },
+      {
+        path: "/females",
+        element: <Females />,
+      },
+      {
+        path: "/now",
+        element: <Now />,
+      },
+      {
+        path: "/later",
+        element: <Later />,
+      },
+      {
+        path: "/gallery",
+        element: <Gallery />,
       },
       {
         path: "/news",

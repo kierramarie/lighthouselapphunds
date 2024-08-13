@@ -1,21 +1,21 @@
 .App {
   background-color: #dce1ea;
-  height: 100%;
+  display: flex;
+  flex-direction: column;
 }
 
 .header {
   display: flex;
   flex-flow: row wrap;
   justify-content: space-between;
-  align-items: center;
-  
-  padding: 0.5rem; 
+  align-items: center; 
   background: #282c34;
 }
 
 .page { 
   display: flex;
   justify-content: center;
+  width: 100%;
 }
 
 .info { 
@@ -29,62 +29,66 @@
 
 .header p {
   margin: 0;
-  padding: 0;
   color: white;
-  padding-left: 1rem;
   font-size: 1.5rem;
+  padding: 0 1rem;
 }
 
 .header ul {
   display: flex;
   flex-flow: row wrap;
   justify-content: flex-end;
-  
   list-style: none;
   margin: 0; 
   background: #282c34;
+  align-items: stretch;
+}
+
+.header li {
+  position: relative;
 }
 
 .header a {
   text-decoration: none;
   display: block;
-  padding: 1rem;
+  padding: 0 1rem;
   color: white;
   font-size: 1rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
 }
 
 .header a:hover {
   background: #17191c;
 }
 
-.page {
-  height: 100%;
-}
-
 .subheading p {
   margin: 0;
 }
 
-@media all and (max-width: 800px) {
+@media all and (max-width: 935px) {
   .header {
     justify-content: space-around;
   }
-  .page { 
-    max-width: 90%;
+  .info { 
+    width: 90%;
   }
 }
 
-@media all and (max-width: 600px) {
+@media all and (max-width: 670px) {
   .header {
-    flex-flow: column wrap;
+    flex-flow: column;
     padding: 0;
+  }
+  .header ul {
+    flex-flow: column;
+    justify-items: center;
   }
   .header a { 
     text-align: center; 
-    padding: 10px;
   }
-  .page { 
-    max-width: 100%;
+  .info { 
+    width: 100%;
   }
 }
 
@@ -95,26 +99,24 @@
   }
 }
 
-@media (min-width: 400px) {
+@media (min-width: 670px) {
   p { font-size: calc(1rem + 1vw); }
   .subheading p {
     font-size: calc(1rem + 1.5vw);
   }
 }
 
-@media (min-width: 1001px){
-  p { font-size: 1.5rem; }
+@media (min-width: 935px){
+  p { font-size: 1rem; }
   .subheading p {
     font-size: 2rem;
   }
 }
 
-ul {
-  list-style-type: none;
-}
-
-li {
-  display: inline;
+.dropdown-content {
+  position: absolute;
+  background: #282c34;
+  width: 100%;
 }
 
 p {

@@ -1,14 +1,14 @@
 import React from 'react';
 
-const Females = () => (
+const Later = () => (
   <div className='page'>
     <div className='info'>
         <div className='subheading'>
-            <p>Females</p>
+            <p>Later</p>
         </div>
-        <p>Females text</p>
+        <p>Later text</p>
     </div>
   </div>
 );
 
-export default Females;
+export default Later;

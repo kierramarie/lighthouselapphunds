@@ -1,14 +1,14 @@
 import React from 'react';
 
-const Females = () => (
+const Gallery = () => (
   <div className='page'>
     <div className='info'>
         <div className='subheading'>
-            <p>Females</p>
+            <p>Gallery</p>
         </div>
-        <p>Females text</p>
+        <p>Gallery text</p>
     </div>
   </div>
 );
 
-export default Females;
+export default Gallery;

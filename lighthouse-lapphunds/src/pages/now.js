@@ -1,14 +1,14 @@
 import React from 'react';
 
-const Females = () => (
+const Now = () => (
   <div className='page'>
     <div className='info'>
         <div className='subheading'>
-            <p>Females</p>
+            <p>Now</p>
         </div>
-        <p>Females text</p>
+        <p>Now text</p>
     </div>
   </div>
 );
 
-export default Females;
+export default Now;
