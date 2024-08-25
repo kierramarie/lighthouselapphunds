@@ -1,13 +1,23 @@
 {
   "files": {
-    "main.css": "/static/css/main.0b9c4f67.css",
-    "main.js": "/static/js/main.edf9f2ac.js",
+    "main.css": "/static/css/main.658a339a.css",
+    "main.js": "/static/js/main.04af4592.js",
+    "static/media/lillibet.jpg": "/static/media/lillibet.2ceb3d6d2b16b8e5a086.jpg",
+    "static/media/joy.jpg": "/static/media/joy.091165d9c8a7c9c36409.jpg",
+    "static/media/blix.jpeg": "/static/media/blix.c9f5b617315d7a428cce.jpeg",
+    "static/media/mateo.jpeg": "/static/media/mateo.b1eb68ffe639d10bce51.jpeg",
+    "static/media/victoria.jpg": "/static/media/victoria.f17a04ff3c8ca70518b2.jpg",
+    "static/media/wilco.jpg": "/static/media/wilco.fbcdf65016279005c729.jpg",
+    "static/media/birdey.jpg": "/static/media/birdey.7b21fc8895133ae07ee1.jpg",
+    "static/media/johnny.jpg": "/static/media/johnny.ada189f2e746c9a77b19.jpg",
+    "static/media/blue.jpeg": "/static/media/blue.63c68185dc2b523a6388.jpeg",
+    "static/media/ringo.jpg": "/static/media/ringo.fd55ace950acc4b0610e.jpg",
     "index.html": "/index.html",
-    "main.0b9c4f67.css.map": "/static/css/main.0b9c4f67.css.map",
-    "main.edf9f2ac.js.map": "/static/js/main.edf9f2ac.js.map"
+    "main.658a339a.css.map": "/static/css/main.658a339a.css.map",
+    "main.04af4592.js.map": "/static/js/main.04af4592.js.map"
   },
   "entrypoints": [
-    "static/css/main.0b9c4f67.css",
-    "static/js/main.edf9f2ac.js"
+    "static/css/main.658a339a.css",
+    "static/js/main.04af4592.js"
   ]
 }
