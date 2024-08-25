@@ -8,25 +8,33 @@ const Home = () => (
         <p>We love showing, performance sports and therapy work and will help you to accomplish these girls. These are just some of the champions we have produced in only the past
 9 years:</p>
         <br></br>
-        <p>GCH Peikkovuoren Kenraali Karpalo</p>
-        <p>GCH Lighthouse Blackhawk</p>
-        <p>GCH Lighthouse My Bonnie Lies O'er the Ocean</p>
-        <p>GCH lighthouse Once Upon a Piper's Dream</p>
-        <p>GCH Lighthouse the Rhinestone Cownboy, also Award of Merit at Westminster</p>
-        <p>GCH Lighthouse Here's Johnny!</p>
-        <p>GCH Lighthouse Emerald Sea</p>
-        <p>GCH Lighthouse Pup the Magic Dragon, also Award of Merit at Westminster</p>
-        <p>GCH Nakina's Mateo at Lighthouse</p>
-        <p>CH Bearspaw Ketukkarki O'The Sea, also the most titled performance dog in so many venues.</p>
-        <p>GCH Likkhu Gaddi</p>
-        <p>CH Lighthouse Wilco Over and Out</p>
-        <p>CH Lanka Fire Tansy</p>
-        <p>Our first lappie boy Teddi, Peikkovuroren Kenraali Karpalo</p>
-        <p>Our first lappie girl Rowan, Bearspaw Ketukarkki O'the Sea</p>
+        <div className='dual-column'>
+            <ul>
+                <li><p>GCH Peikkovuoren Kenraali Karpalo</p></li>
+                <li><p>GCH Lighthouse Blackhawk</p></li>
+                <li><p>GCH Lighthouse My Bonnie Lies O'er the Ocean</p></li>
+                <li><p>GCH lighthouse Once Upon a Piper's Dream</p></li>
+                <li><p>GCH Lighthouse the Rhinestone Cownboy, also Award of Merit at Westminster</p></li>
+                <li><p>GCH Lighthouse Here's Johnny!</p></li>
+                <li><p>GCH Lighthouse Emerald Sea</p></li>
+                <li><p>GCH Lighthouse Pup the Magic Dragon, also Award of Merit at Westminster</p></li>
+            </ul>
+            <ul>
+                <li><p>GCH Nakina's Mateo at Lighthouse</p></li>
+                <li><p>CH Bearspaw Ketukkarki O'The Sea, also the most titled performance dog in so many venues.</p></li>
+                <li><p>GCH Likkhu Gaddi</p></li>
+                <li><p>CH Lighthouse Wilco Over and Out</p></li>
+                <li><p>CH Lanka Fire Tansy</p></li>
+                <li><p>Our first lappie boy Teddi, Peikkovuroren Kenraali Karpalo</p></li>
+                <li><p>Our first lappie girl Rowan, Bearspaw Ketukarkki O'the Sea</p></li>
+            </ul>
+        </div>
         <p>And the rest of our champions, both performance and show. About 30 percent are also certified therapy dogs.</p>
-        <p>CH Keeper of the Lighthouse, also Westminster Award of Merit</p>
-        <p>GCH Lighthouse Prancer, also Best of Opposite Sex at Westminster</p>
-        <p>CH Ligthouse Blitzen</p>
+        <ul>
+            <li><p>CH Keeper of the Lighthouse, also Westminster Award of Merit</p></li>
+            <li><p>GCH Lighthouse Prancer, also Best of Opposite Sex at Westminster</p></li>
+            <li><p>CH Lighthouse Blitzen</p></li>
+        </ul>
     </div>
   </div>
 );
