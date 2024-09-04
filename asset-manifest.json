@@ -1,23 +1,26 @@
 {
   "files": {
-    "main.css": "/static/css/main.658a339a.css",
-    "main.js": "/static/js/main.04af4592.js",
+    "main.css": "/static/css/main.ee5a727a.css",
+    "main.js": "/static/js/main.43a0b8cf.js",
+    "static/media/jackson.jpg": "/static/media/jackson.7690f39e4a43f7fa7c12.jpg",
     "static/media/lillibet.jpg": "/static/media/lillibet.2ceb3d6d2b16b8e5a086.jpg",
+    "static/media/tansy.jpg": "/static/media/tansy.303f0b0df6278d90d6cd.jpg",
     "static/media/joy.jpg": "/static/media/joy.091165d9c8a7c9c36409.jpg",
     "static/media/blix.jpeg": "/static/media/blix.c9f5b617315d7a428cce.jpeg",
     "static/media/mateo.jpeg": "/static/media/mateo.b1eb68ffe639d10bce51.jpeg",
     "static/media/victoria.jpg": "/static/media/victoria.f17a04ff3c8ca70518b2.jpg",
+    "static/media/ikea.jpg": "/static/media/ikea.787628e68ca14ccaa9ec.jpg",
     "static/media/wilco.jpg": "/static/media/wilco.fbcdf65016279005c729.jpg",
     "static/media/birdey.jpg": "/static/media/birdey.7b21fc8895133ae07ee1.jpg",
     "static/media/johnny.jpg": "/static/media/johnny.ada189f2e746c9a77b19.jpg",
     "static/media/blue.jpeg": "/static/media/blue.63c68185dc2b523a6388.jpeg",
     "static/media/ringo.jpg": "/static/media/ringo.fd55ace950acc4b0610e.jpg",
     "index.html": "/index.html",
-    "main.658a339a.css.map": "/static/css/main.658a339a.css.map",
-    "main.04af4592.js.map": "/static/js/main.04af4592.js.map"
+    "main.ee5a727a.css.map": "/static/css/main.ee5a727a.css.map",
+    "main.43a0b8cf.js.map": "/static/js/main.43a0b8cf.js.map"
   },
   "entrypoints": [
-    "static/css/main.658a339a.css",
-    "static/js/main.04af4592.js"
+    "static/css/main.ee5a727a.css",
+    "static/js/main.43a0b8cf.js"
   ]
 }
