@@ -1,4 +1,6 @@
 import React from 'react';
+import PhotoCard from '../components/photoCard';
+import RingoPic from '../photos/males/ringo.jpg';
 
 const Gallery = () => (
   <div className='page'>
@@ -6,7 +8,9 @@ const Gallery = () => (
         <div className='subheading'>
             <p>Gallery</p>
         </div>
-        <p>Gallery text</p>
+        <div className='cardList'>
+          <PhotoCard photo={RingoPic} title='' info='' />
+        </div>
     </div>
   </div>
 );

@@ -1,9 +1,10 @@
 import React from 'react';
 import PhotoCard from '../components/photoCard';
-import BirdeyPic from '../photos/birdey.jpg';
-import JoyPic from '../photos/joy.jpg';
-import LillibetPic from '../photos/lillibet.jpg';
-import VictoriaPic from '../photos/victoria.jpg';
+import BirdeyPic from '../photos/females/birdey.jpg';
+import JoyPic from '../photos/females/joy.jpg';
+import LillibetPic from '../photos/females/lillibet.jpg';
+import VictoriaPic from '../photos/females/victoria.jpg';
+import TansyPic from '../photos/females/tansy.jpg';
 
 const Females = () => (
   <div className='page'>
@@ -19,7 +20,7 @@ with Ikea. They will have a litter in the fall 2024. Triscuit is loving and happ
 at a doggie daycare that Kat runs and both never met a dog (or cat or horse or goat!)
 they didn’t love. True ambassadors for the breed. Triscuit has good hips, normal
 elbows, genetic cleared, and a normal eye (CAER).' />
-            <PhotoCard photo='' title='Tally (Tansy Lanka Fire)' info='Sister to Triscuit. Loved showing and became a champion
+            <PhotoCard photo={TansyPic} title='Tally (Tansy Lanka Fire)' info='Sister to Triscuit. Loved showing and became a champion
 before she was a year old. Our beautiful brown and cream girl. Good hips, normal
 elbows, clear eyes (CAER) and genetically clear by testing. We are decided who her
 husband will be this fall.' />

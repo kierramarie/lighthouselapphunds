@@ -1,14 +1,14 @@
 import React from 'react';
 import PhotoCard from '../components/photoCard';
-import RingoPic from '../photos/ringo.jpg';
-import JohnnyPic from '../photos/johnny.jpg';
-//import IkeaPic from '../photos/ikea.jpeg';
-import BlixPic from '../photos/blix.jpeg';
-//import UsherPic from '../photos/usher.jpeg';
-//import MauiPic from '../photos/maui.jpeg';
-import MateoPic from '../photos/mateo.jpeg';
-import WilcoPic from '../photos/wilco.jpg';
-import BluePic from '../photos/blue.jpeg';
+import RingoPic from '../photos/males/ringo.jpg';
+import JohnnyPic from '../photos/males/johnny.jpg';
+import IkeaPic from '../photos/males/ikea.jpg';
+import BlixPic from '../photos/males/blix.jpeg';
+//import UsherPic from '../photos/males/usher.jpeg';
+//import MauiPic from '../photos/males/maui.jpeg';
+import MateoPic from '../photos/males/mateo.jpeg';
+import WilcoPic from '../photos/males/wilco.jpg';
+import BluePic from '../photos/males/blue.jpeg';
 
 const Males = () => (
   <div className='page'>
@@ -26,7 +26,7 @@ old Still actively showing and you will see him at Westminster next year. A prov
 natural stud with one litter of lovely pups, including our new showboy, Blue Skies.
 Excellent OFA hips, normal elbows, negative under Pawprints genetic testing, and a
 clear eyes CERF. Available at stud to approved females.' />
-          <PhotoCard photo='' title='Ikea (Likkhu Jaldu)' info="Our Swedish import from a line almost extinct. Such an outcross.
+          <PhotoCard photo={IkeaPic} title='Ikea (Likkhu Jaldu)' info="Our Swedish import from a line almost extinct. Such an outcross.
 Ikea is our most active boy and is a great agility and Fast Cat runner. OFA Good hips,
 normal elbows, and Pawprints genetic free with perfect CAER (CERF) eyes. Will be
 available at stud to approved females." />

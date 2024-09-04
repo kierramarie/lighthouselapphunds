@@ -261,7 +261,7 @@ p {
   padding: 2%;
   border-radius: 5px;
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-  width: 25%;
+  width: 40%;
 }
 
 .card p {
@@ -273,5 +273,21 @@ p {
 .card img {
   width: 100%;
   height: auto;
+}
+
+.photoRow {
+  display: flex;
+  flex-flow: row;
+  justify-content: center;
+}
+
+.photoRow img {
+  width: 40%;
+  height: auto;
+  margin: 1%;
+}
+
+.litterCardText {
+  text-align: center;
 }
 
