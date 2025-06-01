@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.0239a80a.css",
-    "main.js": "/static/js/main.157777a9.js",
+    "main.js": "/static/js/main.51d9fb3f.js",
     "static/media/kabuki__and_wilco.jpg": "/static/media/kabuki__and_wilco.4ab0a3bbeec8313d2449.jpg",
     "static/media/kabuki6.jpg": "/static/media/kabuki6.7588b687e8e8afc55cbe.jpg",
     "static/media/unknown6.jpeg": "/static/media/unknown6.bbadadcf06f66472559a.jpeg",
@@ -76,10 +76,10 @@
     "static/media/prancer1.jpg": "/static/media/prancer1.481c4dfa1c8e4a9dd7ea.jpg",
     "index.html": "/index.html",
     "main.0239a80a.css.map": "/static/css/main.0239a80a.css.map",
-    "main.157777a9.js.map": "/static/js/main.157777a9.js.map"
+    "main.51d9fb3f.js.map": "/static/js/main.51d9fb3f.js.map"
   },
   "entrypoints": [
     "static/css/main.0239a80a.css",
-    "static/js/main.157777a9.js"
+    "static/js/main.51d9fb3f.js"
   ]
 }
