@@ -1,74 +1,169 @@
-.App {
-  background-color: #dce1ea;
-  display: flex;
-  flex-direction: column;
-
-  --hf-text-color: white;
-  --hf-bkg-color: #282c34;
-  --page-bkg-color: white;
+/* Base: Ensure box-sizing includes padding */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
 }
 
+html {
+  font-size: 20px;
+  background-color: #5C5344;
+}
+
+body {
+  margin: 0;
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: #E3E0D3;
+
+  --hf-text-color: #EFEDE5;
+  --hf-bkg-color: #5C5344;
+  --page-bkg-color: #E3E0D3;
+  --page-color: #EFEDE5;
+  --highlight: #CABCA8;
+  --text-default: #2d2a29;
+}
+
+/* Header and Logo */
 .header {
   display: flex;
-  flex-flow: row wrap;
   justify-content: space-between;
-  align-items: center; 
+  align-items: stretch;
   background: var(--hf-bkg-color);
+  height: 80px;
+  position: relative; /* key for dropdown to drop relative to this */
 }
 
-.page { 
+.header-logo a {
   display: flex;
-  justify-content: center;
-  width: 100%;
+  align-items: center;
+  padding: 10px;
+  text-decoration: none;
 }
 
-.info { 
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  width: 50%;
-  background-color: white;
-  padding: 1%;
+.header img {
+  height: 60px;
+  width: auto;
 }
 
 .header p {
   margin: 0;
   color: var(--hf-text-color);
   font-size: 1.5rem;
-  padding: 0 1rem;
+  padding: 0 5px;
 }
 
-.header ul {
+/* Navbar styles */
+.navbar {
   display: flex;
-  flex-flow: row wrap;
-  justify-content: flex-end;
-  list-style: none;
-  margin: 0; 
-  background: var(--hf-bkg-color);
+  height: 100%;
+}
+
+.navbar ul {
+  display: flex;
   align-items: stretch;
-}
-
-.header li {
-  position: relative;
-}
-
-.header a {
-  text-decoration: none;
-  display: block;
-  padding: 0 1rem;
-  color: var(--hf-text-color);
-  font-size: 1rem;
-  padding-top: 1rem;
-  padding-bottom: 1rem;
-}
-
-.header a:hover {
-  background: #17191c;
-}
-
-.subheading p {
+  list-style: none;
   margin: 0;
+  padding: 0;
+  height: 100%;
 }
+
+.navbar li {
+  position: relative;
+  display: flex;
+  align-items: stretch;
+  height: 100%;
+}
+
+/* Top-level links (Home, News, etc.) and dropdown toggles */
+.navbar > ul > li > a,
+.navbar > ul > li > .dropdown-toggle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  padding: 0 1rem;
+  font-size: 1rem;
+  color: var(--hf-text-color);
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.navbar > ul > li > a:hover,
+.navbar > ul > li > .dropdown-toggle:hover {
+  background: var(--highlight);
+  color: var(--hf-bkg-color);
+}
+
+/* Dropdown content menu */
+.dropdown-content {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: var(--hf-bkg-color);
+  display: flex;
+  flex-direction: column;
+  width: 100%; /* Match the width of the button */
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+  z-index: 10;
+}
+
+.dropdown-content a {
+  display: block;
+  padding: 0.75rem 1rem;
+  text-decoration: none;
+  font-size: 1rem;
+  color: var(--hf-text-color);
+  white-space: nowrap;
+}
+
+.dropdown-content a:hover {
+  background: var(--highlight);
+  color: var(--hf-bkg-color);
+}
+
+/****************************************************** 
+Page
+******************************************************/
+.page {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  flex: 2;
+}
+
+.page h2 {
+  color: var(--text-default);
+  font-size: 2.25rem;
+  margin-top: 0;
+  margin-bottom: 30px;
+}
+
+.page p {
+  margin: 0 0 10px 0;
+}
+
+.bold-name {
+  font-weight: bold;
+}
+
+/****************************************************** 
+Info
+******************************************************/
+.info {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  width: 50%;
+  background-color: var(--page-color);
+  padding: 1%;
+  max-width: 1600px;
+}
+
 
 /****************************************************** 
 Footer
@@ -184,6 +279,7 @@ Footer
   p { font-size: 0.5rem; }
   .subheading p {
     font-size: 1rem;
+    margin-bottom: 20px;
   }
 }
 
@@ -191,13 +287,15 @@ Footer
   p { font-size: calc(1rem + 1vw); }
   .subheading p {
     font-size: calc(1rem + 1.5vw);
+    margin-bottom: 20px;
   }
 }
 
 @media (min-width: 935px){
   p { font-size: 1rem; }
   .subheading p {
-    font-size: 2rem;
+    font-size: 1.25rem;
+    margin-bottom: 20px;
   }
 }
 
@@ -209,7 +307,7 @@ Footer
 }
 
 p {
-  color: #14161b;
+  color: var(--text-default);
 }
 
 .dual-column {
@@ -245,23 +343,65 @@ p {
 /******************************************************
   Image Card
 ******************************************************/
-.cardList {
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: center;
+/* Grid Masonry: For modern browsers (Chrome, Firefox, Edge) */
+@supports (grid-template-rows: masonry) {
+  .cardList {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)); /* wider cards */
+    grid-template-rows: masonry;
+    gap: 1.5rem;
+  }
+
+  .card {
+    break-inside: avoid;
+  }
+}
+/* Fallback: CSS Columns (Safari, older Edge) */
+@supports not (grid-template-rows: masonry) {
+  .cardList {
+    column-width: 320px;
+    column-gap: 1.5rem;
+  }
+
+  @media (max-width: 1200px) {
+    .cardList {
+      column-width: 280px;
+    }
+  }
+
+  @media (max-width: 800px) {
+    .cardList {
+      column-width: 240px;
+    }
+  }
+
+  @media (max-width: 500px) {
+    .cardList {
+      column-width: 100%;
+    }
+  }
+
+  .card {
+    display: inline-block;
+    width: 100%;
+    margin-bottom: 1.5rem;
+  }
 }
 
+/* Card Style */
 .card {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: center;
-  background-color: white;
-  margin: 1%;
-  padding: 2%;
-  border-radius: 5px;
-  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-  width: 40%;
+  background: var(--page-color);
+  border-radius: 8px;
+  padding: 1rem;
+  box-shadow: 0 2px 6px rgba(45,42,41,0.2);
+  overflow: hidden;
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 0.75rem;
 }
 
 .card p {
@@ -270,24 +410,17 @@ p {
   margin: 2%;
 }
 
-.card img {
-  width: 100%;
-  height: auto;
-}
-
 .photoRow {
   display: flex;
   flex-flow: row;
-  justify-content: center;
+  justify-content: space-evenly;
 }
 
 .photoRow img {
-  width: 40%;
+  width: 45%;
   height: auto;
-  margin: 1%;
 }
 
 .litterCardText {
   text-align: center;
 }
-

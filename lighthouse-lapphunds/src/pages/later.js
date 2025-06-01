@@ -8,9 +8,7 @@ import TansyPic from '../photos/females/tansy.jpg';
 const Later = () => (
   <div className='page'>
     <div className='info'>
-        <div className='subheading'>
-            <p>Future Litters</p>
-        </div>
+        <h2>Future Litters</h2>
         <div className='cardList'>
           <LitterCard male='' female='' names='Casey and Ikea' time='Fall 2024' />
           <LitterCard male={JohnnyPic} female={TansyPic} names='Tansy and Johnny' time='Winter 2024' />

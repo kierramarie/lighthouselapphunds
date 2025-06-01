@@ -17,7 +17,13 @@ const Dropdown = ({ title, options }) => {
         <li onMouseEnter={() => setIsShown(true)}
             onMouseLeave={() => setIsShown(false)}>
                 {/* eslint-disable-next-line */}
-                <a href="#">{title}</a>
+                <a
+                    className="dropdown-toggle"
+                    href="#"
+                    onClick={(e) => e.preventDefault()}
+                    >
+                    {title}
+                </a>
                 {isShown && 
                     <div className="dropdown-content">
                         { optionsList.map(option => {

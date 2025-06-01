@@ -1,8 +1,10 @@
 import React from 'react';
 const News = () =>{
   return (
-    <div>
-      <h2>News</h2>
+    <div className='page'>
+      <div className='info'>
+        <h2>News</h2>
+      </div>
     </div>
   );
 }

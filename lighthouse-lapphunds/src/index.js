@@ -14,6 +14,7 @@ import Females from './pages/females';
 import Now from './pages/now';
 import Later from './pages/later';
 import Gallery from './pages/gallery';
+import Contact from './pages/about';
 
 const router = createBrowserRouter([
   {
@@ -51,6 +52,10 @@ const router = createBrowserRouter([
       {
         path: "/news",
         element: <News />,
+      },
+      {
+        path: "/contact",
+        element: <Contact />,
       },
     ],
     errorElement: <h2>Error Page</h2>

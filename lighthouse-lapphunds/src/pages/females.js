@@ -9,9 +9,7 @@ import TansyPic from '../photos/females/tansy.jpg';
 const Females = () => (
   <div className='page'>
     <div className='info'>
-        <div className='subheading'>
-            <p>Our Girls</p>
-        </div>
+        <h2>Our Girls</h2>
         <div className='cardList'>
             <PhotoCard photo='' title='Triscuit (Triscuit Lanka Fire)' info='One of our French imported girls. On a Christmas trip
 to Paris, I brought home Triscuit and Tansy, my two French girls. Tansy loved showing,

@@ -13,9 +13,7 @@ import BluePic from '../photos/males/blue.jpeg';
 const Males = () => (
   <div className='page'>
     <div className='info'>
-        <div className='subheading'>
-            <p>Our Boys</p>
-        </div>
+        <h2>Our Boys</h2>
         <div className='cardList'>
           <PhotoCard photo={RingoPic} title='Ringo (Lighthouse the Rhinestone Cowboy)' info='Grand Champion, Award of Merit Winner
 at Westminster and therapy certified. This young boy has great size, head, coat and

@@ -4,7 +4,7 @@ import Dropdown from './dropdown';
 
 const Navbar = () => {
     return (
-        <nav>
+        <nav className="navbar">
             <ul>
                 <li><Link to="/">Home</Link></li>
                 <li><Link to="/theFinnishLapphund">The Finnish Lapphund</Link></li>
@@ -18,6 +18,7 @@ const Navbar = () => {
                 />
                 <li><Link to="/gallery">Gallery</Link></li>
                 <li><Link to="/news">News</Link></li>
+                <li><Link to="/contact">Contact</Link></li>
             </ul>
         </nav>
     );
