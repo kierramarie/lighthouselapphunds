@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/lighthouselapphunds/static/css/main.0239a80a.css",
-    "main.js": "/lighthouselapphunds/static/js/main.4c69e360.js",
+    "main.js": "/lighthouselapphunds/static/js/main.a0567717.js",
     "static/media/kabuki__and_wilco.jpg": "/lighthouselapphunds/static/media/kabuki__and_wilco.4ab0a3bbeec8313d2449.jpg",
     "static/media/kabuki6.jpg": "/lighthouselapphunds/static/media/kabuki6.7588b687e8e8afc55cbe.jpg",
     "static/media/unknown6.jpeg": "/lighthouselapphunds/static/media/unknown6.bbadadcf06f66472559a.jpeg",
@@ -76,10 +76,10 @@
     "static/media/prancer1.jpg": "/lighthouselapphunds/static/media/prancer1.481c4dfa1c8e4a9dd7ea.jpg",
     "index.html": "/lighthouselapphunds/index.html",
     "main.0239a80a.css.map": "/lighthouselapphunds/static/css/main.0239a80a.css.map",
-    "main.4c69e360.js.map": "/lighthouselapphunds/static/js/main.4c69e360.js.map"
+    "main.a0567717.js.map": "/lighthouselapphunds/static/js/main.a0567717.js.map"
   },
   "entrypoints": [
     "static/css/main.0239a80a.css",
-    "static/js/main.4c69e360.js"
+    "static/js/main.a0567717.js"
   ]
 }
