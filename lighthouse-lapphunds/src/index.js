@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import {
-  createBrowserRouter,
+  createHashRouter,
   RouterProvider,
 } from "react-router-dom";
 import TheFinnishLapphund from './pages/theFinnishLapphund';
@@ -16,7 +16,7 @@ import Later from './pages/later';
 import Gallery from './pages/gallery';
 import Contact from './pages/about';
 
-const router = createBrowserRouter([
+const router = createHashRouter([
   {
     path: "/",
     element: <App />,
@@ -65,7 +65,6 @@ const router = createBrowserRouter([
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
     <RouterProvider router={router}>
-      <App />
     </RouterProvider>
   </React.StrictMode>
 );
