@@ -31,7 +31,7 @@ const Gallery = () => {
   return (
     <div className='page'>
       <div className='info'>
-        <h2>Our Girls</h2>
+        <h2>Gallery</h2>
         <div className="cardList">
           {images.map((img, idx) => (
             <PhotoCard

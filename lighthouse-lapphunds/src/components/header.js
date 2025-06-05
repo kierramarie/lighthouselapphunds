@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import Navbar from "./navbar";
 import Logo from "../photos/logo_offwhite.png";
+import HamburgerMenu from "./hamburgerMenu";
  
 const Header = () => {
     return (
@@ -12,6 +13,10 @@ const Header = () => {
                 </Link>
             </div>
             <Navbar />
+            <HamburgerMenu />
+            {/* <div className="hamburger-menu">
+                <HamburgerMenuSvg />
+            </div> */}
         </div>
     );
 };
