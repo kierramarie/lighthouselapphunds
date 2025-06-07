@@ -1,4 +1,4 @@
-/* Base: Ensure box-sizing includes padding */
+/* Box Sizing & Base Styles */
 *,
 *::before,
 *::after {
@@ -7,41 +7,43 @@
 
 html {
   font-size: 20px;
-  background-color: #5C5344;
+  background-color: #8d9c9f;
 }
 
 body {
   margin: 0;
 }
 
+/* CSS Variables (in .App) */
 .App {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
-  background-color: #E3E0D3;
+  background-color: var(--page-color);
 
-  --hf-text-color: #EFEDE5;
-  --hf-bkg-color: #5C5344;
-  --page-bkg-color: #E3E0D3;
-  --page-color: #EFEDE5;
-  --highlight: #CABCA8;
-  --text-default: #2d2a29;
+  --footer-color:#8d9c9f;
+  --hm-bkg: #bc9f92;
+  --page-color: #f8f4f1;
+  --card-color: #e5ddd0;
+  --highlight: #bbc191;
+  --text-default: #402f0d;
   --header-height: 80px;
 }
 
-/* Header and Logo */
+/* ================================
+   HEADER & NAVBAR
+================================== */
+
 .header {
   display: flex;
   justify-content: space-between;
   align-items: stretch;
-  background: var(--hf-bkg-color);
   height: var(--header-height);
-  position: relative; /* key for dropdown to drop relative to this */
+  position: relative;
 }
 
 .header-logo a {
   display: flex;
-  flex-wrap: nowrap;
   align-items: center;
   padding: 10px;
   text-decoration: none;
@@ -49,6 +51,10 @@ body {
 
 .header-logo p {
   white-space: nowrap;
+  margin: 0;
+  color: var(--text-default);
+  font-size: 1.5rem;
+  padding: 0 5px;
 }
 
 .header img {
@@ -56,14 +62,7 @@ body {
   width: auto;
 }
 
-.header p {
-  margin: 0;
-  color: var(--hf-text-color);
-  font-size: 1.5rem;
-  padding: 0 5px;
-}
-
-/* Navbar styles */
+/* Navbar Container */
 .navbar {
   display: flex;
   height: 100%;
@@ -72,9 +71,9 @@ body {
 .navbar ul {
   display: flex;
   align-items: stretch;
-  list-style: none;
   margin: 0;
   padding: 0;
+  list-style: none;
   height: 100%;
 }
 
@@ -83,30 +82,32 @@ body {
   display: flex;
   align-items: stretch;
   height: 100%;
+  border-radius: 30px;
 }
 
-/* Top-level links (Home, News, etc.) and dropdown toggles */
+/* Navbar Links & Toggles */
 .navbar > ul > li > a,
 .navbar > ul > li > .dropdown-toggle {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 100%;
-  padding: 0 0.75rem;
-  font-size: 1rem;
-  color: var(--hf-text-color);
+  height: 60%;
+  padding: 0 0.5rem;
+  font-size: .9rem;
+  color: var(--page-color);
+  background: var(--hm-bkg);
   text-decoration: none;
   cursor: pointer;
-  text-align: center;
+  border-radius: 60px;
+  margin: 20px 7px;
 }
 
 .navbar > ul > li > a:hover,
 .navbar > ul > li > .dropdown-toggle:hover {
   background: var(--highlight);
-  color: var(--hf-bkg-color);
 }
 
-/* Dropdown content menu */
+/* Dropdown Menu */
 .dropdown-content {
   position: absolute;
   top: 100%;
@@ -114,63 +115,105 @@ body {
   background: var(--hf-bkg-color);
   display: flex;
   flex-direction: column;
-  width: 100%; /* Match the width of the button */
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+  width: 100%;
   z-index: 10;
+  /* box-shadow: 0 2px 6px rgba(45, 31, 21, 0.2); */
 }
 
 .dropdown-content a {
-  display: block;
-  padding: 0.75rem 1rem;
+  padding: 0 0.5rem;
+  font-size: .9rem;
   text-decoration: none;
-  font-size: 1rem;
-  color: var(--hf-text-color);
+  color: var(--page-color);
+  background: var(--hm-bkg);
   white-space: nowrap;
+  border-radius: 30px;
+  margin-top: 5px;
 }
 
 .dropdown-content a:hover {
   background: var(--highlight);
-  color: var(--hf-bkg-color);
+}
+
+/* ================================
+   HAMBURGER MENU
+================================== */
+.hamburger-whole {
+  flex-direction: column;
 }
 
 .hamburger-menu {
-  justify-content: center;
-  width: var(--header-height);
+  display: flex;
+  flex-direction: column;
 }
 
-.hamburger-menu svg {
-  height: 70%;
-  width: auto;
-  margin: 12px 0;
+.hamburger-menu ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
 }
 
-.hamburger-menu path {
-  stroke: var(--hf-text-color);
+.hamburger-close-button {
+  display: flex;
+  justify-content: flex-end;
+  padding: 0.55rem;
 }
 
-.hamburger-menu > ul > li > a,
-.hamburger-menu > ul > li > .dropdown-toggle {
+.hamburger-menu li {
+  border-radius: 30px;
+  margin-bottom: 5px;
+}
+
+.hamburger-menu a,
+.hamburger-menu .dropdown-toggle {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 100%;
-  padding: 0 0.75rem;
-  font-size: 1rem;
-  color: var(--hf-text-color);
+  width: 100%;
+  height: 50px;
+  padding: 0 0.5rem;
+  font-size: .9rem;
+  background: var(--hm-bkg);
+  color: var(--page-color);
   text-decoration: none;
   cursor: pointer;
-  text-align: center;
+  border-radius: 30px;
 }
 
-.hamburger-menu > ul > li > a:hover,
-.hamburger-menu > ul > li > .dropdown-toggle:hover {
+.hamburger-menu a:hover,
+.hamburger-menu .dropdown-toggle:hover {
   background: var(--highlight);
-  color: var(--hf-bkg-color);
 }
 
-/****************************************************** 
-Page
-******************************************************/
+.hamburger-dropdown {
+  position: static;
+  box-shadow: none;
+  width: 100%;
+}
+
+/* Hamburger Visibility */
+@media all and (max-width: 1235px) {
+  .navbar {
+    display: none;
+  }
+  .hamburger-whole {
+    display: flex;
+  }
+}
+
+@media all and (min-width: 1236px) {
+  .navbar {
+    display: flex;
+  }
+  .hamburger-whole {
+    display: none;
+  }
+}
+
+/* ================================
+   PAGE LAYOUT
+================================== */
+
 .page {
   display: flex;
   justify-content: center;
@@ -181,108 +224,75 @@ Page
 .page h2 {
   color: var(--text-default);
   font-size: 2.25rem;
-  margin-top: 0;
-  margin-bottom: 30px;
+  margin: 0 0 30px;
 }
 
 .page p {
   margin: 0 0 10px 0;
 }
 
-.bold-name {
-  font-weight: bold;
-}
-
-/****************************************************** 
-Info
-******************************************************/
 .info {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   width: 70%;
-  background-color: var(--page-color);
   padding: 1%;
   max-width: 1600px;
 }
 
+@media all and (max-width: 1235px) {
+  .info { width: 70%; }
+}
 
-/****************************************************** 
-Footer
-******************************************************/
+/* ================================
+   FOOTER
+================================== */
 
 .footer {
   display: flex;
   flex-flow: column;
   justify-content: center;
-  align-items: center; 
-  background: var(--hf-bkg-color);
-  padding: 2rem 2rem;
-  
+  align-items: center;
+  background: var(--footer-color);
+  padding: 2rem;
+
   --contact-item-size: .85rem;
   --contact-item-padding: 0.7rem;
 }
 
-.footer-info p {
-  font-size: 1.25rem;
-  color: var(--hf-text-color);
-  margin: 0;
-  padding: 1rem;
-}
-
-.footer-title {
-  text-align: right;
-  flex-grow: 1;
-}
-
-.footer-contact p {
-  margin: 0;
-  color: var(--hf-text-color);
-  font-size: var(--contact-item-size);
-  padding: 0;
-}
-
-.footer-contact {
-  flex-grow: 1;
-}
-
-.footer .copywrite p {
-  font-size: .7rem;
-  color: var(--hf-text-color);
-  padding-top: .5rem;
-  margin: 0;
-}
-
-.footer a {
-  color: var(--hf-text-color);
-}
-
 .footer-info {
   display: flex;
-  flex-flow: row;
   justify-content: center;
   align-items: center;
   width: 100%;
 }
 
-.footer-contact-title p{
-  font-size: 1rem;
+.footer-info p {
+  font-size: 1.25rem;
+  color: var(--page-color);
   margin: 0;
-  padding-right: var(--contact-item-padding);
-  padding-left: var(--contact-item-padding);
-  padding-top: 0;
-  padding-bottom: var(--contact-item-padding);
+  padding: 1rem;
 }
 
-.footer svg {
-  fill: var(--hf-text-color);
-  height: var(--contact-item-size);
+.footer-contact,
+.footer-title {
+  flex-grow: 1;
+}
+
+.footer-contact p {
+  font-size: var(--contact-item-size);
+  margin: 0;
+  color: var(--page-color);
+}
+
+.footer-contact-title p {
+  font-size: 1rem;
+  margin: 0;
+  padding: 0 0.7rem 0.7rem;
 }
 
 .contact-item {
   display: flex;
-  flex-flow: row;
-  justify-content: flex-start;
   align-items: center;
   padding: var(--contact-item-padding);
 }
@@ -291,121 +301,49 @@ Footer
   padding-left: var(--contact-item-padding);
 }
 
-@media all and (max-width: 1235px) {
-  .navbar {
-    display: none;
-  }
-  .hamburger-menu {
-    display: flex;
-  }
-  .info { 
-    width: 90%;
-  }
+.footer .copywrite p {
+  font-size: 0.7rem;
+  color: var(--page-color);
+  margin: 0;
+  padding-top: 0.5rem;
 }
 
-@media all and (min-width: 1236px) {
-  .navbar {
-    display: flex;
-  }
-  .hamburger-menu {
-    display: none;
-  }
+.footer a {
+  color: var(--page-color);
 }
 
-@media all and (max-width: 935px) {
-  
+.footer svg {
+  fill: var(--page-color);
+  height: var(--contact-item-size);
 }
 
-/* @media all and (max-width: 670px) {
-  .header {
-    flex-flow: column;
-    padding: 0;
-  }
-  .header ul {
-    flex-flow: column;
-    justify-items: center;
-  }
-  .header a { 
-    text-align: center; 
-  }
-  .info { 
-    width: 100%;
-  }
-} */
+/* ================================
+   VIDEO
+================================== */
 
-/* @media (min-width: 0px) {
-  p { font-size: 0.5rem; }
-  .subheading p {
-    font-size: 1rem;
-    margin-bottom: 20px;
-  }
-} */
-
-/* @media (min-width: 670px) {
-  p { font-size: calc(1rem + 1vw); }
-  .subheading p {
-    font-size: calc(1rem + 1.5vw);
-    margin-bottom: 20px;
-  }
-}
-
-@media (min-width: 935px){
-  p { font-size: 1rem; }
-  .subheading p {
-    font-size: 1.25rem;
-    margin-bottom: 20px;
-  }
-} */
-
-.dropdown-content {
-  position: absolute;
-  background: var(--hf-bkg-color);
-  width: 100%;
-  z-index: 2;
-}
-
-p {
-  color: var(--text-default);
-}
-
-.dual-column {
-  display: flex;
-  flex-flow: row;
-  justify-content: space-around;
-  align-items: flex-start;
-}
-
-.dual-column ul {
-  width: 50%;
-}
-
-/******************************************************
-  Youtube Video
-******************************************************/
 .video-responsive {
-  overflow: hidden;
-  padding-bottom: 56.25%;
   position: relative;
+  padding-bottom: 56.25%;
   height: 0;
+  overflow: hidden;
 }
 
 .video-responsive iframe {
-  left: 0;
-  top: 0;
-  height: 100%;
-  width: 100%;
   position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
   z-index: 1;
 }
 
-/******************************************************
-  Image Card
-******************************************************/
-/* Grid Masonry: For modern browsers (Chrome, Firefox, Edge) */
+/* ================================
+   IMAGE CARD
+================================== */
+
+/* Masonry Grid Support */
 @supports (grid-template-rows: masonry) {
   .cardList {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)); /* wider cards */
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
     grid-template-rows: masonry;
     gap: 1.5rem;
   }
@@ -414,7 +352,8 @@ p {
     break-inside: avoid;
   }
 }
-/* Fallback: CSS Columns (Safari, older Edge) */
+
+/* Column Fallback */
 @supports not (grid-template-rows: masonry) {
   .cardList {
     column-width: 320px;
@@ -422,21 +361,13 @@ p {
   }
 
   @media (max-width: 1200px) {
-    .cardList {
-      column-width: 280px;
-    }
+    .cardList { column-width: 280px; }
   }
-
   @media (max-width: 800px) {
-    .cardList {
-      column-width: 240px;
-    }
+    .cardList { column-width: 240px; }
   }
-
   @media (max-width: 500px) {
-    .cardList {
-      column-width: 100%;
-    }
+    .cardList { column-width: 100%; }
   }
 
   .card {
@@ -446,12 +377,11 @@ p {
   }
 }
 
-/* Card Style */
 .card {
-  background: var(--page-color);
+  background: var(--card-color);
   border-radius: 8px;
   padding: 1rem;
-  box-shadow: 0 2px 6px rgba(45,42,41,0.2);
+  box-shadow: 0 2px 6px rgba(45, 31, 21, 0.2);
   overflow: hidden;
 }
 
@@ -463,14 +393,34 @@ p {
 }
 
 .card p {
-  width: 100%;
   font-size: 1rem;
   margin: 2%;
 }
 
+/* ================================
+   UTILITY
+================================== */
+
+p {
+  color: var(--text-default);
+}
+
+.bold-name {
+  font-weight: bold;
+}
+
+.dual-column {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+}
+
+.dual-column ul {
+  width: 50%;
+}
+
 .photoRow {
   display: flex;
-  flex-flow: row;
   justify-content: space-evenly;
 }
 

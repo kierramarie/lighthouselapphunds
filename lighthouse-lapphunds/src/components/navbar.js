@@ -7,17 +7,20 @@ const Navbar = () => {
     return (
         <nav className="navbar">
             <ul>
-                {routes.map((route) => {
+                {routes.map((route, index) => {
                     if (Object.hasOwn(route, "href")) {
                         return (
-                            <li><Link to={route.href}>{route.title}</Link></li>
+                            <li key={route.title}>
+                                <Link to={route.href}>{route.title}</Link>
+                            </li>
                         );
-                    }
-                    else {
+                    } else {
                         return (
                             <Dropdown
+                                key={route.title}
                                 title={route.title}
                                 options={route.options}
+                                isHamburger={false}
                             />
                         );
                     }
@@ -25,6 +28,6 @@ const Navbar = () => {
             </ul>
         </nav>
     );
-}
- 
+};
+
 export default Navbar;

@@ -1,5 +1,11 @@
 {
   "devDependencies": {
     "gh-pages": "^6.3.0"
+  },
+  "dependencies": {
+    "framer-motion": "^12.16.0",
+    "hamburger-react": "^2.5.2",
+    "react": "^19.1.0",
+    "react-scripts": "^5.0.1"
   }
 }

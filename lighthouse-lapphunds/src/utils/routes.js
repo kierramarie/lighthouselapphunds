@@ -9,11 +9,21 @@ export const routes = [
   },
   {
     title: "Our Lapphunds",
-    options: ["males", "females"]
+    options: [
+      { title: "Males",
+        href: "/males" },
+      { title: "Females",
+        href: "/females" }
+    ]
   },
   {
     title: "Litters",
-    options: ["now", "later"]
+    options: [
+      { title: "Now",
+        href: "/now" },
+      { title: "Later",
+        href: "/later" }
+    ]
   },
   {
     title: "Gallery",
