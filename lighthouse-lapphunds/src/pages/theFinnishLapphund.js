@@ -6,7 +6,9 @@ const TheFinnishLapphund = () =>{
     <div className='page'>
       <div className='info'>
         <h2>Dog Breed Video: Finnish Lapphund</h2>
-        <YoutubeEmbed embedId="BANecUsSFFw" />
+        <div className="content">
+          <YoutubeEmbed embedId="BANecUsSFFw" />
+        </div>
       </div>
     </div>
   );

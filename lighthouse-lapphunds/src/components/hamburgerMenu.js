@@ -1,23 +1,24 @@
-import React from "react";
 import { useClickAway } from "react-use";
 import { useRef } from "react";
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import Hamburger from "hamburger-react";
 import { AnimatePresence, motion } from "framer-motion";
-import Dropdown from "./dropdown";
+import HamburgerDropdown from "./hamburgerDropdown";
 import { routes } from "../utils/routes";
 
 const HamburgerMenu = () => {
   const [isOpen, setOpen] = useState(false);
+  const [openDropdown, setOpenDropdown] = useState(null);
+
   const ref = useRef(null);
 
   useClickAway(ref, () => setOpen(false));
 
   return (
-    <div className="hamburger-whole">
+    <div ref={ref} className="hamburger-whole">
       <div className="hamburger-close-button">
-        <Hamburger toggled={isOpen} size={24} toggle={setOpen} color="#402f0d" rounded />
+        <Hamburger toggled={isOpen} size={30} toggle={setOpen} color="#402f0d" rounded />
       </div>
       <AnimatePresence>
         {isOpen && (
@@ -49,13 +50,14 @@ const HamburgerMenu = () => {
                       );
                     } else {
                       return (
-                        <Dropdown
+                        <HamburgerDropdown
                           key={route.title}
                           title={route.title}
                           options={route.options}
-                          anim={true}
                           index={idx}
-                          isHamburger={true}
+                          openDropdown={openDropdown}
+                          setOpenDropdown={setOpenDropdown}
+                          setIsMenuOpen={() => setOpen(false)}
                         />
                       );
                     }

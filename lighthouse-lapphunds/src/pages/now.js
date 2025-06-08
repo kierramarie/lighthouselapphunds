@@ -8,9 +8,11 @@ const Now = () => (
   <div className='page'>
     <div className='info'>
         <h2>Current Litters</h2>
-        <div className='cardList'>
-          <LitterCard male={JacksonPic} female='' names='Spirit and Jackson' time='Summer 2024' />
-          <LitterCard male={JohnnyPic} female={BirdeyPic} names='Birdey and Johnny' time='Summer 2024' />
+        <div className="content">
+          <div className='cardList'>
+            <LitterCard male={JacksonPic} female='' names='Spirit and Jackson' time='Summer 2024' />
+            <LitterCard male={JohnnyPic} female={BirdeyPic} names='Birdey and Johnny' time='Summer 2024' />
+          </div>
         </div>
     </div>
   </div>

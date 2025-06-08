@@ -32,15 +32,17 @@ const Gallery = () => {
     <div className='page'>
       <div className='info'>
         <h2>Gallery</h2>
-        <div className="cardList">
-          {images.map((img, idx) => (
-            <PhotoCard
-              key={idx}
-              photo={img.src}
-              title={formatTitle(img.name)}
-              info=""
-            />
-          ))}
+        <div className="content">
+          <div className="cardList">
+            {images.map((img, idx) => (
+              <PhotoCard
+                key={idx}
+                photo={img.src}
+                title={formatTitle(img.name)}
+                info=""
+              />
+            ))}
+          </div>
         </div>
       </div>
     </div>
