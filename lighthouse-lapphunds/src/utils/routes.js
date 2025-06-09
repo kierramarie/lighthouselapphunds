@@ -10,10 +10,10 @@ export const routes = [
   {
     title: "Our Lapphunds",
     options: [
-      { title: "Males",
-        href: "/males" },
-      { title: "Females",
-        href: "/females" }
+      { title: "Our Boys",
+        href: "/ourboys" },
+      { title: "Our Girls",
+        href: "/ourgirls" }
     ]
   },
   {

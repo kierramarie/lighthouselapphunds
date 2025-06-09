@@ -30,11 +30,11 @@ const router = createHashRouter([
         element: <TheFinnishLapphund />,
       },
       {
-        path: "/males",
+        path: "/ourboys",
         element: <Males />,
       },
       {
-        path: "/females",
+        path: "/ourgirls",
         element: <Females />,
       },
       {
