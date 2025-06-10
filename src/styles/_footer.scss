@@ -1,0 +1,69 @@
+.footer {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  background: $bkg-color;
+  padding: 2rem;
+}
+
+.footer-info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.footer-info p {
+  font-size: 1.25rem;
+  color: $page-color;
+  margin: 0;
+}
+
+.footer-contact,
+.footer-title {
+  flex-grow: 1;
+  margin-right: $contact-item-padding;
+}
+
+.footer-title p {
+  text-align: right;
+}
+
+.footer-contact p {
+  font-size: $contact-item-size;
+  margin: 0;
+  color: $page-color;
+}
+
+.footer-contact-title p {
+  font-size: 1rem;
+  margin: 0;
+  padding: 0 0.3rem 0.7rem;
+}
+
+.contact-item {
+  display: flex;
+  align-items: center;
+  padding: $contact-item-padding;
+}
+
+.contact-item p {
+  padding-left: $contact-item-padding;
+}
+
+.footer .copywrite p {
+  font-size: 0.7rem;
+  color: $page-color;
+  margin: 0;
+  padding-top: 0.5rem;
+}
+
+.footer a {
+  color: $page-color;
+}
+
+.footer svg {
+  fill: $page-color;
+  height: $contact-item-size;
+}

@@ -1,0 +1,31 @@
+.bold-name {
+  font-weight: bold;
+}
+
+.dual-column {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+}
+
+.dual-column ul {
+  width: 50%;
+}
+
+.dual-column p {
+  text-align: center;
+}
+
+.dual-column-home {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+}
+
+.dual-column-home ul {
+  width: 50%;
+}
+
+.dual-column-home p {
+  text-align: left;
+}

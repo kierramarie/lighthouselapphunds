@@ -1,3 +1,14 @@
+html {
+  font-size: 20px;
+  background-color: $bkg-color;
+}
+
+@media (max-width: $mobile-width) {
+  html {
+    font-size: 16px;
+  }
+}
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -10,4 +21,15 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: $page-color;
+}
+
+p {
+  color: $text-default;
 }
