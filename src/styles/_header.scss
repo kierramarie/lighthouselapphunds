@@ -25,3 +25,17 @@
   height: 60px;
   width: auto;
 }
+
+@media (max-width: $mobile-width) {
+  .header {
+    height: $mobile-header-height;
+  }
+
+  .header img {
+    height: 45px;
+  }
+  
+  .header-logo a {
+    padding: 5px;
+  }
+}

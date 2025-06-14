@@ -29,3 +29,9 @@
 .dual-column-home p {
   text-align: left;
 }
+
+@media (max-width: $mobile-width) {
+  .dual-column-home ul {
+    width: 40%;
+  }
+}
