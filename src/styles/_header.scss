@@ -1,0 +1,32 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  height: $header-height;
+  position: relative;
+
+  img {
+    height: 60px;
+    width: auto;
+  }
+}
+
+.header-logo {
+  a {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    text-decoration: none;
+  }
+
+  p {
+    white-space: nowrap;
+    margin: 0;
+    color: $text-default;
+    font-size: 1.5rem;
+    padding: 0 5px;
+    font-family: "Inknut Antiqua", serif;
+    font-weight: 700;
+    font-style: normal;
+  }
+}
