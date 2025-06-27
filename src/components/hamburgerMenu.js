@@ -29,7 +29,6 @@ const HamburgerMenu = () => {
             transition={{ duration: 0.2 }}
             className="hamburger-menu"
           >
-            <div>
               <ul>
                   {routes.map((route, idx) => {
                     if (route.href) {
@@ -63,7 +62,6 @@ const HamburgerMenu = () => {
                     }
                   })}
               </ul>
-            </div>
           </motion.div>
         )}
       </AnimatePresence>

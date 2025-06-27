@@ -38,3 +38,11 @@
 .content {
   margin: 30px 0;
 }
+
+// Mobile style
+@media (max-width: 600px) {
+  .info {
+    width: 90%;
+    margin-top: 10px;
+  }
+}
