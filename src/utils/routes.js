@@ -1,40 +1,40 @@
 export const routes = [
   {
-    title: "Home",
+    title: "HOME",
     href: "/"
   },
   {
-    title: "The Finnish Lapphund",
+    title: "THE FINNISH LAPPHUND",
     href: "/theFinnishLapphund"
   },
   {
-    title: "Our Lapphunds",
+    title: "OUR LAPPHUNDS",
     options: [
-      { title: "Our Boys",
+      { title: "OUR BOYS",
         href: "/ourboys" },
-      { title: "Our Girls",
+      { title: "OUR GIRLS",
         href: "/ourgirls" }
     ]
   },
   {
-    title: "Litters",
+    title: "LITTERS",
     options: [
-      { title: "Now",
+      { title: "NOW",
         href: "/now" },
-      { title: "Later",
+      { title: "LATER",
         href: "/later" }
     ]
   },
   {
-    title: "Gallery",
+    title: "GALLERY",
     href: "/gallery"
   },
   {
-    title: "News",
+    title: "NEWS",
     href: "/news"
   },
   {
-    title: "Contact",
+    title: "CONTACT",
     href: "/contact"
   }
 ];

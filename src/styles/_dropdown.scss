@@ -11,7 +11,8 @@
 
 .dropdown-content a {
   padding: 0 0.5rem;
-  font-size: .8rem;
+  font-size: .9rem;
+  height: $nav-tab-height;
   text-decoration: none;
   text-align: center;
   align-items: center;
@@ -20,8 +21,8 @@
   background: $hm-bkg;
   white-space: nowrap;
   border-radius: 60px;
-  margin-top: 5px;
-  margin-right: 7px;
+  margin-bottom: 5px;
+  // margin-right: 7px;
 }
 
 .dropdown-content a:hover {

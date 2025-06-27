@@ -8,6 +8,7 @@
     justify-content: center;
     list-style: none;
     height: 100%;
+    padding: 0;
   }
 
   li {
@@ -17,16 +18,16 @@
     padding-top: 24px;
     height: 100%;
     border-radius: 30px;
-    padding-right: 8px;
+    margin-right: 8px;
   }
 
   a, .dropdown-toggle {
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 40%;
+    height: $nav-tab-height;
     padding: 0 0.5rem;
-    font-size: .8rem;
+    font-size: .9rem;
     color: $page-color;
     background: $hm-bkg;
     text-decoration: none;
