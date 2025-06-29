@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.c4a5cc4b.css",
-    "main.js": "/static/js/main.2a5f8098.js",
+    "main.css": "/static/css/main.cde5d59c.css",
+    "main.js": "/static/js/main.fc5e668e.js",
     "static/media/snowbelle7.jpg": "/static/media/snowbelle7.b68992996dd3818c0bf0.jpg",
     "static/media/teemu2.jpg": "/static/media/teemu2.f35a5fbcbca8912df28a.jpg",
     "static/media/kabuki__and_wilco.jpg": "/static/media/kabuki__and_wilco.4ab0a3bbeec8313d2449.jpg",
@@ -106,11 +106,11 @@
     "static/media/blue2.jpeg": "/static/media/blue2.7382e598a1da5de330ba.jpeg",
     "static/media/prancer1.jpg": "/static/media/prancer1.481c4dfa1c8e4a9dd7ea.jpg",
     "index.html": "/index.html",
-    "main.c4a5cc4b.css.map": "/static/css/main.c4a5cc4b.css.map",
-    "main.2a5f8098.js.map": "/static/js/main.2a5f8098.js.map"
+    "main.cde5d59c.css.map": "/static/css/main.cde5d59c.css.map",
+    "main.fc5e668e.js.map": "/static/js/main.fc5e668e.js.map"
   },
   "entrypoints": [
-    "static/css/main.c4a5cc4b.css",
-    "static/js/main.2a5f8098.js"
+    "static/css/main.cde5d59c.css",
+    "static/js/main.fc5e668e.js"
   ]
 }
