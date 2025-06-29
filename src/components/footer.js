@@ -30,6 +30,10 @@ const Footer = () => {
             <div className="copywrite">
                 <p>Copyright © 2024 - All rights reserved || Designed By: Kierra Searle</p>
             </div>
+            <div className="copywrite-mobile">
+                <p>Copyright © 2024 - All rights reserved</p>
+                <p>Designed By: Kierra Searle</p>
+            </div>
         </div>
     );
 };

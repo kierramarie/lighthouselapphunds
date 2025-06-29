@@ -27,6 +27,25 @@ const Contact = () =>{
                   <p>Email: smkidder@me.com</p>
                 </div>
               </div>
+              <div className='mobile'>
+                <div className='mobile-item'>
+                  <p className='bold-name'>Mary Davidson and Bryan Jenkins</p>
+                  <p>Location: Cape Cod, MA</p>
+                  <p>Phone: (774) 207-7992</p>
+                  <p>Email: leosbythesea@gmail.com</p>
+                </div>
+                <div className='mobile-item'>
+                  <p className='bold-name'>Linda and Gary Pelletier</p>
+                  <p>Location: Windsor, CT</p>
+                  <p>Email: studio549@yahoo.com</p>
+                </div>
+                <div className='mobile-item'>
+                  <p className='bold-name'>Sue Kidder</p>
+                  <p>Location: Waynesville, NC</p>
+                  <p>Phone: (843) 860-3907</p>
+                  <p>Email: smkidder@me.com</p>
+                </div>
+              </div>
             </div>
           </div>
         </div>

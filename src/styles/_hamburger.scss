@@ -70,6 +70,10 @@
   background-color: $hm-sub-highlight;
 }
 
+.caret {
+  display: none;
+}
+
 /* Hamburger Visibility */
 @media all and (max-width: 1235px) {
   .navbar {
@@ -93,5 +97,69 @@
 @media (max-width: 600px) {
   .hamburger-close-button {
     padding: 0.2rem;
+  }
+
+  .ham-buttom-open {
+    padding-bottom: 0;
+    background-color: $hm-bkg;
+  }
+
+  .header-logo-open {
+    display: none;
+  }
+
+  .ham-open {
+    width: 100%;
+    background-color: $hm-bkg;
+  }
+
+  .hamburger-menu {
+    background-color: $hm-bkg;
+  }
+
+  .hamburger-menu li {
+    border-radius: 0;
+    margin-bottom: 0;
+    margin-right: 0;
+  }
+
+  .hamburger-menu a,
+  .hamburger-menu {
+    font-size: 1.2rem;
+    border-radius: 0;
+    justify-content: left;
+    font-family: "Karla", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    letter-spacing: 8%;
+  }
+
+  .hamburger-menu a{
+    padding: 0 18px;
+  }
+
+  .hamburger-menu .dropdown-toggle {
+    justify-content: space-between;
+    padding: 0 18px;
+    font-size: 1.2rem;
+    border-radius: 0;
+    font-family: "Karla", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    letter-spacing: 8%;
+  }
+
+  .hamburger-dropdown a {
+    padding: 0 18px;
+    width: 100%;
+    background-color: $hm-sub;
+    align-self: center;
+    margin-right: 0;
+    margin-bottom: 0;
+    margin-top: 0;
+  }
+
+  .caret {
+    display: block;
   }
 }

@@ -34,6 +34,10 @@ p {
   text-align: left;
 }
 
+.mobile {
+  display: none;
+}
+
 .photoRow {
   display: flex;
   justify-content: space-evenly;
@@ -46,4 +50,30 @@ p {
 
 .litterCardText {
   text-align: center;
+}
+
+@media (max-width: 600px) {
+  .dual-column {
+    display: none;
+  }
+
+  .mobile {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+  }
+
+  .mobile p {
+    text-align: center;
+  }
+
+  .mobile div {
+    width: 100%;
+  }
+
+  .mobile-item {
+    margin-bottom: 12px;
+  }
+
 }

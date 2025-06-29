@@ -2,6 +2,7 @@ import { useClickAway } from "react-use";
 import { useRef } from "react";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
+import CaretDownSvg from "./caretDownSvg";
 
 const HamburgerDropdown = ({ title, options, index = 0, openDropdown, setOpenDropdown, setIsMenuOpen }) => {
   const ref = useRef(null);
@@ -42,7 +43,10 @@ const HamburgerDropdown = ({ title, options, index = 0, openDropdown, setOpenDro
             onClick={handleToggle}
             className="dropdown"
       >
-      <div className="dropdown-toggle">{title}</div>
+      <div className="dropdown-toggle">
+        {title}
+        <CaretDownSvg className="caret" color="#f8f4f1" width="20px" height="20px"/>
+      </div>
         {isOpen && (
             <div className={`dropdown-content hamburger-dropdown`}>
             {options.map((option, i) => (

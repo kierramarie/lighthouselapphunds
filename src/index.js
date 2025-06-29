@@ -14,7 +14,7 @@ import Females from './pages/females';
 import Now from './pages/now';
 import Later from './pages/later';
 import Gallery from './pages/gallery';
-import Contact from './pages/about';
+import Contact from './pages/contact';
 
 const router = createHashRouter([
   {

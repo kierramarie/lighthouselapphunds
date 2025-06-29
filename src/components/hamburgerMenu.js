@@ -7,8 +7,7 @@ import { AnimatePresence, motion } from "framer-motion";
 import HamburgerDropdown from "./hamburgerDropdown";
 import { routes } from "../utils/routes";
 
-const HamburgerMenu = () => {
-  const [isOpen, setOpen] = useState(false);
+const HamburgerMenu = ({isOpen, setOpen}) => {
   const [openDropdown, setOpenDropdown] = useState(null);
 
   const ref = useRef(null);
@@ -16,8 +15,8 @@ const HamburgerMenu = () => {
   useClickAway(ref, () => setOpen(false));
 
   return (
-    <div ref={ref} className="hamburger-whole">
-      <div className="hamburger-close-button">
+    <div ref={ref} className={"hamburger-whole" + (isOpen ? " ham-open" : "")}>
+      <div className={"hamburger-close-button" + (isOpen ? " ham-buttom-open" : "")}>
         <Hamburger toggled={isOpen} size={30} toggle={setOpen} color="#402f0d" rounded />
       </div>
       <AnimatePresence>
