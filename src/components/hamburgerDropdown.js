@@ -43,16 +43,16 @@ const HamburgerDropdown = ({ title, options, index = 0, openDropdown, setOpenDro
             onClick={handleToggle}
             className="dropdown"
       >
-      <div className="dropdown-toggle">
-        {title}
-        <CaretDownSvg className="caret" color="#f8f4f1" width="20px" height="20px"/>
-      </div>
+        <div className="dropdown-toggle">
+          {title}
+          <CaretDownSvg color="#f8f4f1" width="20px" height="20px"/>
+        </div>
         {isOpen && (
-            <div className={`dropdown-content hamburger-dropdown`}>
+          <div className={`dropdown-content hamburger-dropdown`}>
             {options.map((option, i) => (
-                <Link key={i} to={option.href} onClick={() => { setIsMenuOpen(); }} >{option.title}</Link>
+              <Link key={i} to={option.href} onClick={() => { setIsMenuOpen(); }} >{option.title}</Link>
             ))}
-            </div>
+          </div>
         )}
       </motion.li>
     );
