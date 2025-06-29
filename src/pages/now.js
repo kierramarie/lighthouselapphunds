@@ -1,6 +1,6 @@
 import React from 'react';
-// import LitterCard from '../components/litterCard';
-// import { current } from "../utils/litters";
+import { current } from '../utils/litters';
+import LitterCard from '../components/litterCard';
 
 const Now = () => (
   <div className='page'>
@@ -8,6 +8,12 @@ const Now = () => (
         <h2>Current Litters</h2>
         <div className="content">
           <div className='cardList'>
+            {current.map((litter, idx) => (
+              <LitterCard
+                key={idx}
+                {...litter}
+              />
+            ))}
           </div>
         </div>
     </div>

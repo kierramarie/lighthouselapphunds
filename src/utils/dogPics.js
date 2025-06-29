@@ -25,7 +25,7 @@ export const dogPhotos = {
     "lillibet": LillibetPic,
     "opal": OpalPic,
     "snowbelle": SnowbellePic,
-    "tansy": TansyPic,
+    "tansy": TansyPic, // Tally
     "triscuit": TriscuitPic,
     "victoria": VictoraPic,
     "blix": BlixPic,
@@ -34,7 +34,7 @@ export const dogPhotos = {
     "jackson": JacksonPic,
     "johnny": JohnnyPic,
     "mateo": MateoPic,
-    "ringo": RingoPic,
+    "ringo": RingoPic, // Rhinestone Cowboy
     "teemu": TeemuPic,
     "usher": UsherPic,
     "wilco": WilcoPic

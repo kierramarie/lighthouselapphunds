@@ -1,12 +1,13 @@
 import React from "react";
 
 
-const LitterCard = ({ male, female, names, time }) => {
+const LitterCard = ({ photos, names, time }) => {
     return (
         <div className="card">
             <div className="photoRow">
-                <img src={female} alt="dog" />
-                <img src={male} alt="dog" />
+                {photos.map((photo, idx) => (
+                    <img src={photo} alt="dog" key={idx} />
+                ))}
             </div>
             <div className="litterCardText">
                 <p>{names}</p>

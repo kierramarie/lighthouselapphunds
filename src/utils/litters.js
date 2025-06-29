@@ -3,7 +3,7 @@ import TriscuitIkeaPic from "../photos/gallery/triscuit_and_ikea.jpg";
 
 const current = [
     {
-        names: "Snowbelle and Likkhu Gaddhi (Blix)",
+        names: "Snowbelle and Blix (Likkhu Gaddhi)",
         photos: [dogPhotos["snowbelle"], dogPhotos["blix"]],
     }
 
@@ -17,16 +17,16 @@ const future = [
     },
     {
         names: "Tally and Blue Skies",
-        photos: [dogPhotos["blue"]],
+        photos: [dogPhotos["tansy"], dogPhotos["blue"]],
         time: "Winter 2025"
     },
     {
-        names: "Birdey (Yutoris Blackbird O'er the Lighthouse) and GCH Rhinestone Cowboy",
-        photos: [dogPhotos["birdey"]],
+        names: "Birdey (Yutoris Blackbird O'er the Lighthouse) and Ringo (GCH Rhinestone Cowboy)",
+        photos: [dogPhotos["birdey"], dogPhotos["ringo"]],
         time: "Spring 2026"
     },
     {
-        names: "triscuit and Ikea",
+        names: "Triscuit and Ikea",
         photos: [TriscuitIkeaPic],
         time: "Spring 2026"
     }
